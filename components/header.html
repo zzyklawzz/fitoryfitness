@@ -1,0 +1,328 @@
+<!-- ===================================== -->
+<!-- FITORY SHARED HEADER -->
+<!-- ===================================== -->
+
+<header
+    class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur border-b border-orange-500/10"
+>
+
+    <nav
+        class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between"
+    >
+
+        <!-- ===================================== -->
+        <!-- LOGO → HOME -->
+        <!-- ===================================== -->
+
+        <a
+            href="index.html"
+            class="flex items-center shrink-0"
+        >
+
+            <img
+                src="Assets/logos/fitory-logo.png"
+                alt="Fitory Fitness"
+                class="h-7 md:h-8"
+            >
+
+        </a>
+
+
+        <!-- ===================================== -->
+        <!-- SITE-WIDE MENU BUTTON -->
+        <!-- Desktop + Tablet + Mobile -->
+        <!-- ===================================== -->
+
+        <button
+            id="mobile-menu-button"
+            type="button"
+            class="text-white hover:text-orange-500 transition-colors duration-300 focus:outline-none flex items-center justify-center lg:-mr-8 xl:-mr-12"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+
+            <!-- Menu Icon -->
+
+            <svg
+                id="menu-icon"
+                class="w-7 h-7"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+            >
+
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                />
+
+            </svg>
+
+
+            <!-- Close Icon -->
+
+            <svg
+                id="close-icon"
+                class="hidden w-7 h-7"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+            >
+
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                />
+
+            </svg>
+
+        </button>
+
+    </nav>
+
+
+    <!-- ===================================== -->
+    <!-- SITE-WIDE NAVIGATION -->
+    <!-- Desktop + Tablet + Mobile -->
+    <!-- ===================================== -->
+
+    <div
+        id="mobile-menu"
+        class="hidden border-t border-zinc-800 bg-black"
+    >
+
+        <nav
+            class="max-w-7xl mx-auto flex flex-col py-3"
+        >
+
+
+            <!-- 1. Home -->
+
+            <div class="px-6 lg:px-10">
+
+                <a
+                    href="index.html"
+                    class="menu-nav-link inline-block py-4 text-sm font-semibold uppercase tracking-wide"
+                    data-page="home"
+                >
+                    Home
+                </a>
+
+            </div>
+
+
+            <!-- 2. Facilities -->
+
+            <div class="px-6 lg:px-10">
+
+                <a
+                    href="facilities.html"
+                    class="menu-nav-link inline-block py-4 text-sm font-semibold uppercase tracking-wide"
+                    data-page="facilities"
+                >
+                    Facilities
+                </a>
+
+            </div>
+
+
+            <!-- 3. Mobile App -->
+
+            <div class="px-6 lg:px-10">
+
+                <a
+                    href="mobile-app.html"
+                    class="menu-nav-link inline-block py-4 text-sm font-semibold uppercase tracking-wide"
+                    data-page="mobile-app"
+                >
+                    Mobile App
+                </a>
+
+            </div>
+
+
+            <!-- 4. Investor -->
+
+            <div class="px-6 lg:px-10">
+
+                <a
+                    href="investor.html"
+                    class="menu-nav-link inline-block py-4 text-sm font-semibold uppercase tracking-wide"
+                    data-page="investor"
+                >
+                    Investor
+                </a>
+
+            </div>
+
+
+            <!-- 5. Programs -->
+
+            <div class="px-6 lg:px-10">
+
+                <a
+                    href="programs.html"
+                    class="menu-nav-link inline-block py-4 text-sm font-semibold uppercase tracking-wide"
+                    data-page="programs"
+                >
+                    Programs
+                </a>
+
+            </div>
+
+
+            <!-- 6. Career -->
+
+            <div class="px-6 lg:px-10">
+
+                <a
+                    href="career.html"
+                    class="menu-nav-link inline-block py-4 text-sm font-semibold uppercase tracking-wide"
+                    data-page="career"
+                >
+                    Career
+                </a>
+
+            </div>
+
+
+            <!-- 7. Coaches Partnership -->
+
+            <div class="px-6 lg:px-10">
+
+                <a
+                    href="coaches-partnership.html"
+                    class="menu-nav-link inline-block py-4 text-sm font-semibold uppercase tracking-wide"
+                    data-page="coaches-partnership"
+                >
+                    Coaches Partnership
+                </a>
+
+            </div>
+
+
+            <!-- 8. About Us -->
+
+            <div class="px-6 lg:px-10">
+
+                <a
+                    href="about-us.html"
+                    class="menu-nav-link inline-block py-4 text-sm font-semibold uppercase tracking-wide"
+                    data-page="about-us"
+                >
+                    About Us
+                </a>
+
+            </div>
+
+
+            <!-- 9. Contact Us -->
+
+            <div class="px-6 lg:px-10">
+
+                <a
+                    href="contact-us.html"
+                    class="menu-nav-link inline-block py-4 text-sm font-semibold uppercase tracking-wide"
+                    data-page="contact-us"
+                >
+                    Contact Us
+                </a>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ===================================== -->
+<!-- MENU STYLES -->
+<!-- ===================================== -->
+
+<style>
+
+    /* ===================================== */
+    /* MENU LINK BASE */
+    /* ===================================== */
+
+    #mobile-menu .menu-nav-link {
+
+        position: relative;
+
+        color: #ffffff;
+
+        transition:
+            color 0.25s ease;
+
+    }
+
+
+    /* ===================================== */
+    /* SHORT ORANGE UNDERLINE */
+    /* ===================================== */
+
+    #mobile-menu .menu-nav-link::after {
+
+        content: "";
+
+        position: absolute;
+
+        left: 0;
+
+        bottom: 8px;
+
+        width: 0;
+
+        height: 2px;
+
+        background: #f97316;
+
+        transition:
+            width 0.25s ease;
+
+    }
+
+
+    /* ===================================== */
+    /* HOVER STATE */
+    /* ===================================== */
+
+    #mobile-menu .menu-nav-link:hover {
+
+        color: #f97316;
+
+    }
+
+
+    #mobile-menu .menu-nav-link:hover::after {
+
+        width: 65%;
+
+    }
+
+
+    /* ===================================== */
+    /* ACTIVE PAGE */
+    /* ===================================== */
+
+    #mobile-menu .menu-nav-link.active {
+
+        color: #f97316;
+
+    }
+
+
+    #mobile-menu .menu-nav-link.active::after {
+
+        width: 65%;
+
+    }
+
+</style>
